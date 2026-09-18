@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Library Collection</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+>
+
+</head>
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+
+        <h2>
+            📚 Father Borromeo Library
+        </h2>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="category.html">
+                    Browse Books
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#collections">
+                    Collections
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#services">
+                    Services
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#about">
+                    About
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= CATEGORY PAGE ================= -->
+
+<section class="library-section">
+
+
+    <div class="page-title">
+
+        <h1 id="categoryTitle">
+            Library Collection
+        </h1>
+
+        <p id="categoryDescription">
+            Loading collection...
+        </p>
+
+    </div>
+
+
+    <!-- SEARCH -->
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by title, author, call number, or record number..."
+        >
+
+    </div>
+
+
+    <!-- TABLE -->
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Record Number
+                    </th>
+
+                    <th>
+                        Call Number
+                    </th>
+
+                    <th>
+                        Author
+                    </th>
+
+                    <th>
+                        Title
+                    </th>
+
+                    <th>
+                        Copyright
+                    </th>
+
+                    <th>
+                        Location
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody id="bookTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <p id="loading">
+        Loading books...
+    </p>
+
+
+    <p id="no-result">
+        No books found.
+    </p>
+
+
+    <br>
+
+
+    <div style="text-align:center;">
+
+        <a
+            href="index.html#collections"
+            class="btn"
+        >
+            ← Back to Collections
+        </a>
+
+    </div>
+
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 Father Borromeo Library
+    </p>
+
+</footer>
+
+
+<!-- SHEETJS -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js">
+</script>
+
+
+<!-- OUR JAVASCRIPT -->
+
+<script src="category.js"></script>
+
+
+</body>
+
+</html>

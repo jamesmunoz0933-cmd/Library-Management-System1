@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Returned Books | Father Borromeo Library</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo">
+
+        <h2>
+            📚 Father Borromeo Library
+        </h2>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="books.html">
+                    Browse Books
+                </a>
+            </li>
+
+            <li>
+                <a href="borrowed.html">
+                    Borrowed Books
+                </a>
+            </li>
+
+            <li>
+                <a href="returned.html">
+                    Returned Books
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<!-- RETURNED BOOKS -->
+
+<section class="library-section">
+
+
+    <div class="page-title">
+
+        <h1>
+            ✅ Returned Books
+        </h1>
+
+        <p>
+            History of all returned books.
+        </p>
+
+    </div>
+
+
+
+    <!-- SEARCH -->
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchReturned"
+            placeholder="🔍 Search book or borrower..."
+        >
+
+    </div>
+
+
+
+    <!-- TABLE -->
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Book Title</th>
+
+                    <th>Borrower</th>
+
+                    <th>Contact</th>
+
+                    <th>Borrow Date</th>
+
+                    <th>Due Date</th>
+
+                    <th>Returned Date</th>
+
+                    <th>Status</th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody id="returned-list">
+
+                <tr>
+
+                    <td
+                        colspan="7"
+                        class="loading"
+                    >
+
+                        📚 Loading returned books...
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+</section>
+<!-- BACK TO ADMIN DASHBOARD -->
+
+<div class="back-admin-container">
+
+    <a
+       href="admin.html"
+        class="back-admin-btn"
+    >
+        ← Back to Admin Dashboard
+    </a>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Father Borromeo Library
+    </p>
+
+</footer>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script
+    type="module"
+    src="returned.js"
+></script>
+
+
+</body>
+
+</html>

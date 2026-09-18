@@ -1,0 +1,1781 @@
+ /* ==========================================
+   FATHER BORROMEO LIBRARY
+   PROFESSIONAL STYLE.CSS - PART 1
+========================================== */
+
+
+/* ==========================
+   GLOBAL
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    background:#F8F7F3;
+
+    color:#2B2B2B;
+
+    line-height:1.7;
+
+}
+
+
+/* ==========================
+   HEADER / NAVBAR
+========================== */
+
+header{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:#2E5D50;
+
+    color:white;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+}
+
+
+
+.logo h2{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:30px;
+
+}
+
+
+
+nav ul li a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+
+
+nav ul li a:hover{
+
+    color:#D4AF37;
+
+}
+
+
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+
+.hero{
+
+    min-height:85vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:80px 10%;
+
+    background:#F8F7F3;
+
+}
+
+
+
+.hero-text{
+
+    max-width:850px;
+
+}
+
+
+
+.hero h1{
+
+    font-size:60px;
+
+    color:#2E5D50;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.hero p{
+
+    font-size:18px;
+
+    color:#555;
+
+    margin-bottom:35px;
+
+}
+
+
+
+/* ==========================
+   BUTTON
+========================== */
+
+
+.btn{
+
+    display:inline-block;
+
+    padding:15px 40px;
+
+    background:#2E5D50;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+.btn:hover{
+
+    background:#D4AF37;
+
+    color:#2B2B2B;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/* ==========================
+   GENERAL SECTION
+========================== */
+
+
+section{
+
+    padding:80px 8%;
+
+}
+
+
+
+section h2{
+
+    text-align:center;
+
+    color:#2E5D50;
+
+    font-size:38px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+section p{
+
+    color:#555;
+
+}
+
+
+
+/* ==========================
+   ABOUT SECTION
+========================== */
+
+
+.about{
+
+    background:white;
+
+    text-align:center;
+
+}
+
+
+
+.about p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    font-size:17px;
+
+}
+
+
+
+
+/* ==========================
+   LIBRARY COLLECTIONS
+========================== */
+
+
+.collections{
+
+    background:#F3F1EA;
+
+}
+
+
+
+.collection-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+
+
+.collection-card{
+
+    background:white;
+
+    padding:35px 25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    border-top:5px solid #D4AF37;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+
+
+.collection-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+
+
+.collection-card h3{
+
+    color:#2E5D50;
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.collection-card p{
+
+    color:#666;
+
+    font-size:15px;
+
+}
+/* ==========================================
+   FATHER BORROMEO LIBRARY
+   PROFESSIONAL STYLE.CSS - PART 2
+========================================== */
+
+
+/* ==========================
+   LIBRARY SERVICES
+========================== */
+
+.services{
+
+    background:white;
+
+}
+
+
+
+.service-box{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:45px;
+
+}
+
+
+
+.service{
+
+    background:#F8F7F3;
+
+    padding:35px 25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    border:1px solid #E8E8E8;
+
+    transition:.3s;
+
+}
+
+
+
+.service:hover{
+
+    background:#2E5D50;
+
+    color:white;
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.service h3{
+
+    color:#2E5D50;
+
+    font-size:23px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.service:hover h3{
+
+    color:#D4AF37;
+
+}
+
+
+
+.service p{
+
+    color:#666;
+
+}
+
+
+
+.service:hover p{
+
+    color:white;
+
+}
+
+
+
+
+
+/* ==========================
+   QUICK ACCESS
+========================== */
+
+
+.quick-access{
+
+    background:#2E5D50;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+
+
+.quick-access h2{
+
+    color:white;
+
+}
+
+
+
+.quick-access p{
+
+    color:#eee;
+
+    max-width:700px;
+
+    margin:20px auto 35px;
+
+}
+
+
+
+.quick-access .btn{
+
+    background:#D4AF37;
+
+    color:#2B2B2B;
+
+}
+
+
+
+.quick-access .btn:hover{
+
+    background:white;
+
+}
+
+
+
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+
+footer{
+
+    background:#21443A;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+
+
+footer p{
+
+    color:#eee;
+
+}
+
+
+
+
+
+/* ==========================================
+   BOOKS PAGE DESIGN
+========================================== */
+
+
+/* ==========================
+   BOOK SECTION
+========================== */
+
+
+.library-section{
+
+    padding:80px 8%;
+
+    background:#F8F7F3;
+
+}
+
+
+
+.page-title{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.page-title h1{
+
+    color:#2E5D50;
+
+    font-size:42px;
+
+}
+
+
+
+.page-title p{
+
+    color:#666;
+
+}
+
+
+
+/* ==========================
+   SEARCH BAR
+========================== */
+
+
+.search-box{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.search-box input{
+
+    width:70%;
+
+    max-width:700px;
+
+    padding:18px 25px;
+
+    border-radius:50px;
+
+    border:1px solid #ddd;
+
+    outline:none;
+
+    font-size:16px;
+
+    background:white;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+
+
+.search-box input:focus{
+
+    border-color:#2E5D50;
+
+    box-shadow:0 0 15px rgba(46,93,80,.25);
+
+}
+
+
+
+
+
+/* ==========================
+   BOOK TABLE
+========================== */
+
+
+.table-container{
+
+    overflow-x:auto;
+
+    background:white;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+   
+}
+
+
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+
+
+thead{
+
+    background:#2E5D50;
+
+    color:white;
+
+}
+
+
+
+th{
+
+    padding:18px;
+
+    text-align:center;
+
+}
+
+
+
+td{
+
+    padding:16px;
+
+    text-align:center;
+
+    border-bottom:1px solid #eee;
+
+}
+
+
+
+tbody tr{
+
+    transition:.3s;
+
+}
+
+
+
+tbody tr:hover{
+
+    background:#F3F1EA;
+
+}
+
+
+
+
+
+/* ==========================
+   TABLE BUTTON
+========================== */
+
+
+table button{
+
+    background:#2E5D50;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+table button:hover{
+
+    background:#D4AF37;
+
+    color:#2B2B2B;
+
+}
+
+
+
+
+/* ==========================
+   NO RESULT
+========================== */
+
+
+#no-result{
+
+    text-align:center;
+
+    margin-top:20px;
+
+    color:#777;
+
+}
+
+
+
+
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+
+@media(max-width:900px){
+
+
+.collection-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.service-box{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+
+
+header{
+
+    flex-direction:column;
+
+}
+
+
+
+.logo h2{
+
+    font-size:22px;
+
+}
+
+
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin-top:15px;
+
+}
+
+
+
+.hero h1{
+
+    font-size:38px;
+
+}
+
+
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+
+
+.collection-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.service-box{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.search-box input{
+
+    width:100%;
+
+}
+
+
+
+table{
+
+    min-width:750px;
+
+}
+
+
+
+th,td{
+
+    padding:12px;
+
+    font-size:14px;
+
+}
+
+
+
+}   
+/* ==========================================
+   BORROW BOOK PAGE
+   FATHER BORROMEO LIBRARY
+========================================== */
+
+
+/* ==========================
+   BORROW SECTION
+========================== */
+
+.borrow-section {
+
+    min-height:80vh;
+
+    padding:80px 8%;
+
+    background:#F8F7F3;
+
+}
+
+
+/* ==========================
+   BORROW TITLE
+========================== */
+
+.borrow-section > h1 {
+
+    text-align:center;
+
+    color:#2E5D50;
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+
+.borrow-section > p {
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:40px;
+
+}
+
+
+/* ==========================
+   BORROW FORM
+========================== */
+
+.borrow-section form {
+
+    width:100%;
+
+    max-width:600px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    border-top:5px solid #D4AF37;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,.08);
+
+}
+
+
+/* ==========================
+   LABELS
+========================== */
+
+.borrow-section label {
+
+    display:block;
+
+    color:#2E5D50;
+
+    font-weight:600;
+
+    margin-top:18px;
+
+    margin-bottom:7px;
+
+}
+
+
+/* ==========================
+   INPUTS
+========================== */
+
+.borrow-section input {
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:
+
+        1px solid #ddd;
+
+    border-radius:8px;
+
+    background:#F8F7F3;
+
+    color:#2B2B2B;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+
+.borrow-section input:focus {
+
+    border-color:#2E5D50;
+
+    box-shadow:
+        0 0 8px
+        rgba(46,93,80,.15);
+
+}
+
+
+/* READ ONLY */
+
+.borrow-section input[readonly] {
+
+    background:#F1EFE8;
+
+    color:#555;
+
+    cursor:not-allowed;
+
+}
+
+
+/* ==========================
+   DUE DATE NOTE
+========================== */
+
+.borrow-section small {
+
+    display:block;
+
+    margin-top:8px;
+
+    color:#777;
+
+    font-size:13px;
+
+}
+
+
+/* ==========================
+   BORROW BUTTON
+========================== */
+
+.borrow-section button {
+
+    width:100%;
+
+    margin-top:30px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#2E5D50;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.borrow-section button:hover {
+
+    background:#D4AF37;
+
+    color:#2B2B2B;
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:600px) {
+
+    .borrow-section {
+
+        padding:50px 20px;
+
+    }
+
+
+    .borrow-section > h1 {
+
+        font-size:32px;
+
+    }
+
+
+    .borrow-section form {
+
+        padding:25px 20px;
+
+    }
+
+}
+/* ==========================================
+   ADMIN LOGIN PAGE
+========================================== */
+
+.login-section {
+
+    min-height: calc(100vh - 100px);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 60px 20px;
+
+    background: #F8F7F3;
+
+}
+
+
+.login-box {
+
+    width: 100%;
+
+    max-width: 450px;
+
+    background: white;
+
+    padding: 45px 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 40px
+        rgba(0,0,0,.12);
+
+    border-top: 5px solid #D4AF37;
+
+}
+
+
+.login-icon {
+
+    font-size: 55px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.login-box h1 {
+
+    color: #2E5D50;
+
+    font-size: 27px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.login-box > p {
+
+    color: #777;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* ==========================
+   LOGIN FORM
+========================== */
+
+.login-box form {
+
+    text-align: left;
+
+}
+
+
+.login-box label {
+
+    display: block;
+
+    color: #2E5D50;
+
+    font-weight: 600;
+
+    margin-top: 18px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.login-box input {
+
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    background: #F8F7F3;
+
+    transition: .3s;
+
+}
+
+
+.login-box input:focus {
+
+    border-color: #2E5D50;
+
+    background: white;
+
+    box-shadow:
+        0 0 10px
+        rgba(46,93,80,.15);
+
+}
+
+
+/* ==========================
+   LOGIN BUTTON
+========================== */
+
+.login-box button {
+
+    width: 100%;
+
+    margin-top: 28px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background: #2E5D50;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.login-box button:hover {
+
+    background: #D4AF37;
+
+    color: #2B2B2B;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(0,0,0,.15);
+
+}
+
+
+.login-box button:active {
+
+    transform: scale(.98);
+
+}
+
+
+/* ==========================
+   LOGIN MESSAGE
+========================== */
+
+#loginMessage {
+
+    text-align: center;
+
+    margin-top: 18px;
+
+    font-weight: 600;
+
+}
+
+
+/* ==========================
+   BACK LINK
+========================== */
+
+.login-box > a {
+
+    display: inline-block;
+
+    margin-top: 10px;
+
+    color: #2E5D50;
+
+    text-decoration: none;
+
+    font-weight: 500;
+
+    transition: .3s;
+
+}
+
+
+.login-box > a:hover {
+
+    color: #D4AF37;
+
+}
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 500px) {
+
+    .login-box {
+
+        padding: 35px 25px;
+
+    }
+
+
+    .login-box h1 {
+
+        font-size: 23px;
+
+    }
+
+
+    .login-icon {
+
+        font-size: 45px;
+
+    }
+
+}
+/* ==========================================
+   ADMIN LOGIN LINK - FOOTER
+========================================== */
+
+.admin-link {
+    margin-top: 12px;
+}
+
+.admin-link a {
+
+    display: inline-block;
+
+    padding: 10px 24px;
+
+    background: #2E5D50;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 50px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+
+.admin-link a:hover {
+
+    background: #D4AF37;
+
+    color: #2B2B2B;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px
+        rgba(0,0,0,.15);
+
+}
+/* ==========================================
+   LIBRARY LOGO
+========================================== */
+
+/* ==========================================
+   LIBRARY LOGO - UPPER RIGHT
+========================================== */
+
+.library-logo {
+
+    position: absolute;
+
+    top: 90px;
+
+    right: 40px;
+
+    z-index: 10;
+
+}
+
+.library-logo img {
+
+    width: 120px;
+
+    height: 120px;
+
+    object-fit: contain;
+
+    display: block;
+
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .library-logo {
+        top: 80px;
+        right: 20px;
+    }
+
+    .library-logo img {
+        width: 65px;
+        height: 65px;
+    }
+
+}
+/* ==========================
+   CATEGORY CARD LINKS
+========================== */
+
+.collection-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.collection-card:visited {
+    color: inherit;
+}
+
+.collection-card:hover {
+    text-decoration: none;
+}
+/* ==========================================
+   CLICKABLE COLLECTION CARDS
+========================================== */
+
+.collection-card {
+
+    text-decoration: none;
+
+    color: inherit;
+
+    display: block;
+
+    cursor: pointer;
+
+}
+
+
+.collection-card h3 {
+
+    color: #2E5D50;
+
+}
+
+
+.collection-card p {
+
+    color: #666;
+
+}
+
+
+.collection-card:hover {
+
+    text-decoration: none;
+
+}
+
+
+/* CATEGORY DESCRIPTION */
+
+.category-subtitle {
+
+    text-align: center;
+
+    color: #666;
+
+    margin-top: -10px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero-logo {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    z-index: 3;
+}
+
+/* HERO */
+
+.hero {
+
+    position: relative;
+
+}
+
+
+/* CATEGORY TABLE */
+
+.library-section {
+
+    min-height: 80vh;
+
+}
+
+
+.library-section .page-title {
+
+    margin-bottom: 35px;
+
+}
+
+
+#loading {
+
+    text-align: center;
+
+    margin: 25px;
+
+    color: #2E5D50;
+
+    font-weight: 600;
+
+}
+
+
+#no-result {
+
+    display: none;
+
+    text-align: center;
+
+    margin: 25px;
+
+    color: #777;
+
+}
+
+
+.table-container {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+}
+
+
+table {
+
+    min-width: 900px;
+
+}
+
+
+/* TITLE COLUMN */
+
+table td:nth-child(4) {
+
+    text-align: left;
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:600px) {
+
+    .hero-logo {
+
+        width: 60px;
+
+        height: 60px;
+
+        top: 20px;
+
+        right: 20px;
+
+    }
+
+}
+/* BACK TO ADMIN DASHBOARD */
+
+.back-admin-container {
+    text-align: center;
+    margin: 40px 0 25px;
+}
+
+.back-admin-btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #2E5D50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.back-admin-btn:hover {
+    background: #244A40;
+    text-decoration: none;
+}
+
+/* ================= RULES PAGE ================= */
+
+.rules {
+padding: 70px 8%;
+background: #f7f9f8;
+min-height: 70vh;
+}
+
+.rules > h1 {
+text-align: center;
+color: #2E5D50;
+margin-bottom: 15px;
+font-size: 36px;
+}
+
+.rules > .collection-intro {
+text-align: center;
+margin-bottom: 45px;
+color: #666;
+}
+
+/* ================= RULES BOX ================= */
+
+.rules-box {
+max-width: 950px;
+margin: 0 auto 30px;
+padding: 30px 35px;
+background: white;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.rules-box h2 {
+color: #2E5D50;
+margin-bottom: 25px;
+font-size: 24px;
+}
+
+/* ================= NUMBERED STEPS ================= */
+
+.rules-box ol {
+padding-left: 25px;
+}
+
+.rules-box ol li {
+margin-bottom: 18px;
+padding-left: 8px;
+color: #444;
+line-height: 1.6;
+}
+
+/* ================= REMINDERS ================= */
+
+.rules-box ul {
+padding-left: 25px;
+}
+
+.rules-box ul li {
+margin-bottom: 16px;
+color: #444;
+line-height: 1.7;
+}
+
+/* ================= NOTE ================= */
+
+.rule-note {
+margin-top: 25px;
+padding: 20px;
+background: #f1f6f4;
+border-left: 5px solid #2E5D50;
+border-radius: 6px;
+}
+
+.rule-note p {
+margin-bottom: 12px;
+color: #555;
+line-height: 1.7;
+}
+
+.rule-note p:last-child {
+margin-bottom: 0;
+}
+
+/* ================= BACK BUTTON ================= */
+
+.back-home {
+text-align: center;
+margin-top: 40px;
+}
+
+.back-home .btn {
+display: inline-block;
+text-decoration: none;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+
+.rules {
+    padding: 45px 5%;
+}
+
+.rules > h1 {
+    font-size: 28px;
+}
+
+.rules-box {
+    padding: 25px 20px;
+}
+
+.rules-box h2 {
+    font-size: 20px;
+}
+
+
+}

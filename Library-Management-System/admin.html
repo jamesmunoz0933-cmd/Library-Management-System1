@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Admin Dashboard | Father Borromeo Library</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+<style>
+
+/* ==========================================
+   ADMIN DASHBOARD
+========================================== */
+
+.dashboard-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+    max-width: 1100px;
+
+    margin: 30px auto;
+
+}
+
+
+/* ==========================================
+   DASHBOARD CARDS
+========================================== */
+
+.dashboard-card {
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 12px
+        rgba(0,0,0,0.10);
+
+}
+
+
+.dashboard-card h2 {
+
+    font-size: 32px;
+
+    margin: 0 0 10px;
+
+    color: #2E5D50;
+
+}
+
+
+.dashboard-card p {
+
+    margin: 0;
+
+    font-weight: bold;
+
+    color: #555;
+
+}
+
+
+/* ==========================================
+   ADMIN BUTTONS
+========================================== */
+
+.admin-actions {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+    max-width: 900px;
+
+    margin: 40px auto;
+
+}
+
+
+.admin-btn {
+
+    border: none;
+
+    border-radius: 12px;
+
+    padding: 25px 20px;
+
+    background: #2E5D50;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        0.2s ease;
+
+}
+
+
+.admin-btn:hover {
+
+    background: #D4AF37;
+
+    color: #2B2B2B;
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 6px 15px
+        rgba(0,0,0,0.20);
+
+}
+
+
+.admin-btn:active {
+
+    transform:
+        scale(0.97);
+
+}
+
+
+/* ==========================================
+   LOGOUT BUTTON
+========================================== */
+
+.logout-btn {
+
+    border: none;
+
+    background: #D4AF37;
+
+    color: #2B2B2B;
+
+    padding: 9px 18px;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: .3s;
+
+}
+
+
+.logout-btn:hover {
+
+    background: white;
+
+    color: #2E5D50;
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 800px) {
+
+    .dashboard-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        padding:
+            0 20px;
+
+    }
+
+
+    .admin-actions {
+
+        grid-template-columns:
+            1fr;
+
+        padding:
+            0 20px;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .dashboard-grid {
+
+        grid-template-columns:
+            1fr;
+
+        padding:
+            0 20px;
+
+    }
+
+
+    .logout-btn {
+
+        margin-top: 5px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ======================================
+     HEADER
+====================================== -->
+
+<header>
+
+    <div class="logo">
+
+        <h2>
+            📚 Father Borromeo Library
+        </h2>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+
+            <li>
+                <a href="books.html">
+                    Library Collection
+                </a>
+            </li>
+
+
+            <li>
+                <a href="borrowed.html">
+                    Borrowed
+                </a>
+            </li>
+
+
+            <li>
+                <a href="returned.html">
+                    Returned
+                </a>
+            </li>
+
+
+            <!-- LOGOUT -->
+
+            <li>
+
+                <button
+                    id="logoutBtn"
+                    class="logout-btn"
+                    type="button"
+                >
+
+                    🚪 Logout
+
+                </button>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ======================================
+     ADMIN DASHBOARD
+====================================== -->
+
+<section class="library-section">
+
+
+    <div class="page-title">
+
+        <h1>
+            🛠️ Admin Dashboard
+        </h1>
+
+        <p>
+            Father Borromeo Library Management System
+        </p>
+
+    </div>
+
+
+
+    <!-- ==================================
+         STATISTICS
+    ================================== -->
+
+    <div class="dashboard-grid">
+
+
+        <!-- TOTAL BOOKS -->
+
+        <div class="dashboard-card">
+
+            <h2 id="totalBooks">
+                0
+            </h2>
+
+            <p>
+                📚 Total Books
+            </p>
+
+        </div>
+
+
+
+        <!-- AVAILABLE BOOKS -->
+
+        <div class="dashboard-card">
+
+            <h2 id="availableBooks">
+                0
+            </h2>
+
+            <p>
+                🟢 Available Books
+            </p>
+
+        </div>
+
+
+
+        <!-- BORROWED BOOKS -->
+
+        <div class="dashboard-card">
+
+            <h2 id="borrowedBooks">
+                0
+            </h2>
+
+            <p>
+                🔴 Borrowed Books
+            </p>
+
+        </div>
+
+
+
+        <!-- RETURNED BOOKS -->
+
+        <div class="dashboard-card">
+
+            <h2 id="returnedBooks">
+                0
+            </h2>
+
+            <p>
+                ✅ Returned Books
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- ==================================
+         MANAGEMENT BUTTONS
+    ================================== -->
+
+    <div class="admin-actions">
+
+
+        <!-- LIBRARY COLLECTION -->
+
+        <button
+            class="admin-btn"
+            type="button"
+            onclick="window.location.href='books.html'"
+        >
+
+            📚
+            <br><br>
+
+            Library Collection
+
+        </button>
+
+
+
+        <!-- BORROWED -->
+
+        <button
+            class="admin-btn"
+            type="button"
+            onclick="window.location.href='borrowed.html'"
+        >
+
+            🔴
+            <br><br>
+
+            Borrowed Books
+
+        </button>
+
+
+
+        <!-- RETURNED -->
+
+        <button
+            class="admin-btn"
+            type="button"
+            onclick="window.location.href='returned.html'"
+        >
+
+            ✅
+            <br><br>
+
+            Returned Books
+
+        </button>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ======================================
+     FOOTER
+====================================== -->
+
+<footer>
+
+    <p>
+        © 2026 Father Borromeo Library
+    </p>
+
+</footer>
+
+
+
+<!-- ======================================
+     ADMIN JAVASCRIPT
+====================================== -->
+
+<script
+    type="module"
+    src="admin.js"
+></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Borrow Book | Father Borromeo Library</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo">
+
+        <h2>
+            📚 Father Borromeo Library
+        </h2>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="books.html">
+                    Browse Books
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<!-- BORROW SECTION -->
+
+<section class="borrow-section">
+
+
+    <h1>
+        📖 Borrow Book
+    </h1>
+
+
+    <p>
+        Complete the form below to borrow this book.
+    </p>
+
+
+
+    <form id="borrowForm">
+
+
+        <!-- BOOK -->
+
+        <label for="bookTitle">
+            Book Title
+        </label>
+
+        <input
+            type="text"
+            id="bookTitle"
+            readonly
+        >
+
+
+
+        <!-- NAME -->
+
+        <label for="borrowerName">
+            Full Name
+        </label>
+
+        <input
+            type="text"
+            id="borrowerName"
+            placeholder="Enter your full name"
+            required
+        >
+
+
+
+        <!-- CONTACT -->
+
+        <label for="contact">
+            Contact Number
+        </label>
+
+        <input
+            type="tel"
+            id="contact"
+            placeholder="Enter your contact number"
+            required
+        >
+
+
+
+        <!-- BORROW DATE -->
+
+        <label for="borrowDate">
+            Borrow Date
+        </label>
+
+        <input
+            type="date"
+            id="borrowDate"
+            readonly
+        >
+
+
+
+        <!-- DUE DATE -->
+
+        <label for="dueDate">
+            Due Date
+        </label>
+
+        <input
+            type="date"
+            id="dueDate"
+            readonly
+        >
+
+
+        <small>
+            📅 Due date is automatically set to 5 days
+            after borrowing.
+        </small>
+
+
+
+        <!-- SUBMIT -->
+
+        <button
+            type="submit"
+        >
+            ✅ Borrow Book
+        </button>
+
+
+    </form>
+
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Father Borromeo Library
+    </p>
+
+</footer>
+
+
+
+<script
+    type="module"
+    src="borrow.js"
+></script>
+
+
+</body>
+
+</html>

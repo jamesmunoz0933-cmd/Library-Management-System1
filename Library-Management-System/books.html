@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Father Borromeo Library</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo">
+        <h2>📚 Father Borromeo Library</h2>
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="books.html">Library Collection</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<!-- LIBRARY SECTION -->
+
+<section class="library-section">
+
+    <div class="page-title">
+
+        <h1>📖 Library Collection</h1>
+
+        <p>
+            Browse our available books and search by title, author, or call number.
+        </p>
+
+    </div>
+
+
+
+    <!-- SEARCH -->
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search title, author, or call number..."
+        >
+
+    </div>
+
+
+
+    <!-- BOOK TABLE -->
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Record No.</th>
+
+                    <th>Call Number</th>
+
+                    <th>Author</th>
+
+                    <th>Title</th>
+
+                    <th>Copyright</th>
+
+                    <th>Location</th>
+
+                    <th>Status</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+
+
+            <tbody id="book-list">
+
+                <tr>
+
+                    <td colspan="8" class="loading">
+
+                        📚 Loading books...
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+
+        © 2026 Father Borromeo Library
+
+    </p>
+
+</footer>
+
+
+
+<!-- FIREBASE SCRIPT -->
+
+<script type="module" src="script.js"></script>
+
+</body>
+
+</html>
