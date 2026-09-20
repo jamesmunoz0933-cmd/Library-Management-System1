@@ -21,6 +21,48 @@
 </head>
 
 <body>
+ <button id="installBtn" style="
+    display:none;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    padding:12px 18px;
+    background:#1e3a8a;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    z-index:9999;
+">
+    📥 Install App
+</button>
+
+<script>
+let deferredPrompt;
+const installBtn = document.getElementById("installBtn");
+
+window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    installBtn.style.display = "block";
+});
+
+installBtn.addEventListener("click", async () => {
+    if (!deferredPrompt) return;
+
+    deferredPrompt.prompt();
+
+    await deferredPrompt.userChoice;
+
+    deferredPrompt = null;
+    installBtn.style.display = "none";
+});
+
+window.addEventListener("appinstalled", () => {
+    installBtn.style.display = "none";
+});
+</script>
 
 <!-- ================= HEADER ================= -->
 
